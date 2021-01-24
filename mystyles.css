@@ -1,0 +1,141 @@
+/* mystyles.css */
+
+html,
+body{
+    height: 100%;
+    scroll-behavior: smooth;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.section-content {
+    padding: 3rem 0;
+}
+
+#about {
+    padding: 3rem 0;
+    background-image: url(img/main\ pic.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    width: 100%;
+    height:fit-content;
+    
+}
+
+#about-box {
+background-color: black;
+opacity: 0.7;
+}
+
+.box{
+  height: auto;
+  width: 150px;
+  position:absolute;
+  top: 25%;
+  right: 5%;
+  margin: -50px 0px 0px -20px;
+
+
+}
+
+.image_1{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+
+}
+
+.image_2{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+  
+}
+.image_3{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+}
+.carousel_img_1{
+  width: 100%;
+  max-height: fit-content;
+}
+.carousel_img_2{
+  width: 100%;
+  max-height:fit-content;
+}
+.carousel_img_3{
+  width: 100%;
+  max-height:fit-content;
+  opacity: 30%;
+}
+
+.text_1{
+  padding-left: 0;
+  text-align: left;
+  list-style-position: inside;
+  margin:auto;
+  display: inline-block;
+}
+
+.text_2{
+  padding-left: 0;
+  text-align: left;
+  list-style-position: inside;
+  margin: auto;
+  display: inline-block;
+  color: black;
+}
+
+
+#top {
+    display: inline-block;
+    background-color: #00000080;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #top:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #top:active {
+    background-color: #555;
+  }
+  #top.show {
+    opacity: 0.8;
+    visibility: visible;
+  }
